@@ -4,15 +4,30 @@ body {
     background-color: #1F2937;
     color: white;
 }
+a:link, a:visited {text-decoration: none; color: white;}
+a:hover {font-weight: bold; color: black; margin: 0px;}
 .header {
     display: flex;
     margin-bottom: 20px;
+    justify-content: flex-end;
+    padding-left: 50px;
+
+}
+.header,
+.top,
+.footer,
+.bottom {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .links {
-    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
 }
 .text {
-    margin-left: 100px;
+    margin-right: auto;
     font-size: 24px;
     font-weight: bold;
     color: #F9FAF8;
@@ -36,8 +51,8 @@ body {
     align-items: center;
     background-color: white;
     color: black;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-right: -20px;
+    margin-left: -20px;
 }
 .Information {
     display: flex;
@@ -87,4 +102,10 @@ body {
 .head-content {
     display: flex;
     flex-direction: column;
+}
+.bottom {
+    background-color: white;
+    color: black;
+    padding: 0%;
+
 }
