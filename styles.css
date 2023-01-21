@@ -5,13 +5,12 @@ body {
     color: white;
 }
 a:link, a:visited {text-decoration: none; color: white;}
-a:hover {font-weight: bold; color: black; margin: 0px;}
+a:hover {color: black; margin: 0px;}
 .header {
     display: flex;
     margin-bottom: 20px;
     justify-content: flex-end;
     padding-left: 50px;
-
 }
 .header,
 .top,
@@ -40,6 +39,13 @@ a:hover {font-weight: bold; color: black; margin: 0px;}
     display: flex; 
     margin-bottom: 50px;  
 }
+.sign-up {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #3882F6;
+}
+button:active{transform: translateY(2px);}
 .content {
     width: 300px;
     margin-left: 20px;
@@ -54,37 +60,6 @@ a:hover {font-weight: bold; color: black; margin: 0px;}
     margin-right: -20px;
     margin-left: -20px;
 }
-.Information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-}
-.image-cards {
-    display: flex;
-    gap: 40px;
-}
-.image {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-}
-.info-cards {
-    display: flex;
-    gap:40px;
-}
-.info {
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-}
-.info p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .quote {
     display: flex;
     flex-shrink: 0;
@@ -93,6 +68,8 @@ a:hover {font-weight: bold; color: black; margin: 0px;}
     margin-right: -10px;
 }
 .placeholder {
+    display: flex;
+    align-self: center;
     background-color: white;
     width: 500px;
     height: 200px;
@@ -107,5 +84,27 @@ a:hover {font-weight: bold; color: black; margin: 0px;}
     background-color: white;
     color: black;
     padding: 0%;
+
+}
+.empty {
+    background-color: black;
+    width: 100px;
+    height: 50px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+}
+.p {
+    justify-content: center;
+}
+
+.boxes  {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
 
 }
