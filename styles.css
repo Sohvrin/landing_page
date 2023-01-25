@@ -3,6 +3,7 @@ body {
     flex-direction: column; 
     background-color: #1F2937;
     color: white;
+    
 }
 a:link, a:visited {text-decoration: none; color: white;}
 a:hover {color: black; margin: 0px;}
@@ -12,18 +13,15 @@ a:hover {color: black; margin: 0px;}
     justify-content: flex-end;
     padding-left: 50px;
 }
-.header,
-.top,
-.footer,
-.bottom {
-    padding-left: 50px;
-    padding-right: 50px;
-}
+
 .links {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
 
+}
+.title {
+    margin-bottom: 20px;
 }
 .text {
     margin-right: auto;
@@ -36,16 +34,18 @@ a:hover {color: black; margin: 0px;}
     font-size: 48px;
 }
 .top {
-    display: flex; 
+    display: flex;
     margin-bottom: 50px;  
+    padding: 50px;
 }
 .sign-up {
     border: none;
     border-radius: 15px;
     padding: 10px;
     background-color: #3882F6;
+    flex-shrink: 0;
 }
-button:active{transform: translateY(2px);}
+button:active{transform: translateY(1px);}
 .content {
     width: 300px;
     margin-left: 20px;
@@ -62,11 +62,30 @@ button:active{transform: translateY(2px);}
 }
 .quote {
     display: flex;
-    flex-shrink: 0;
-    background-color: grey;
+    flex-direction: column;
+    background-color: lightgrey;
+    background-size: 175px, auto;
+    color: black;
     margin-left: -10px;
-    margin-right: -10px;
+    margin-right: -20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    
+
 }
+#buote {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.credits {
+    display: flex;
+    margin-left: 150px;
+
+}
+
 .placeholder {
     display: flex;
     align-self: center;
@@ -75,6 +94,7 @@ button:active{transform: translateY(2px);}
     height: 200px;
     margin-left: auto;
     margin-right: auto;
+    flex-basis: auto;
 }
 .head-content {
     display: flex;
@@ -84,18 +104,24 @@ button:active{transform: translateY(2px);}
     background-color: white;
     color: black;
     padding: 0%;
+    margin-left: -10px;
+    margin-right: -20px;
+    margin-top: 0px;
+    padding: 50px;
 
 }
 .empty {
-    background-color: black;
+    border: 2px;
+    border-color: #3882F6;
+    border-style: solid;
     width: 100px;
-    height: 50px;
+    height: 100px;
+    border-radius: 15px;
 }
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightblue;
 }
 .p {
     justify-content: center;
@@ -107,4 +133,36 @@ button:active{transform: translateY(2px);}
     margin-bottom: 50px;
     justify-content: center;
 
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+h3 {
+    margin: 0px;
+}
+.calling-card {
+    display: flex;
+    background-color: #3882F6;
+    padding: 50px 100px 50px 100px;
+    border-radius: 5px;
+    justify-content: center;
+    
+}
+
+.content-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: auto;
+    padding-left: 50px;
+    justify-content: center;
+}
+#bottom {
+    border-style: solid;    
+    border-width: 1px;
+    border-color: white;
+    color: white;
 }
